@@ -1,0 +1,6 @@
+../Core/Src/I2C_Functions.c:31:6:process_data	32	static
+../Core/Src/I2C_Functions.c:49:6:HAL_I2C_ListenCpltCallback	16	static
+../Core/Src/I2C_Functions.c:56:6:HAL_I2C_AddrCallback	16	static
+../Core/Src/I2C_Functions.c:73:6:HAL_I2C_SlaveTxCpltCallback	16	static
+../Core/Src/I2C_Functions.c:83:6:HAL_I2C_SlaveRxCpltCallback	16	static
+../Core/Src/I2C_Functions.c:104:6:HAL_I2C_ErrorCallback	24	static
