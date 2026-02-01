@@ -1,0 +1,2 @@
+../Core/Src/RTC.c:10:9:RTC_ConvertFromDec_toBin	1
+../Core/Src/RTC.c:16:9:RTC_ConvertFromBin_toDec	1
