@@ -22,6 +22,9 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
+//В этом проекте первый канал таймера 2 используется для измерения частоты, а второй для измерения коэффициента заполнения ШИМ.
+//Второй канал внутренне соединён с первым, и ему не нужен входной сигнал.
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -310,7 +313,7 @@ static void MX_TIM2_Init(void)
   }
   sConfigIC.ICPolarity = TIM_INPUTCHANNELPOLARITY_RISING;
   sConfigIC.ICSelection = TIM_ICSELECTION_DIRECTTI;
-  sConfigIC.ICPrescaler = TIM_ICPSC_DIV1;
+  sConfigIC.ICPrescaler = TIM_ICPSC_DIV8; //Захват частоты происходит через каждые 8 импульсов
   sConfigIC.ICFilter = 0;
   if (HAL_TIM_IC_ConfigChannel(&htim2, &sConfigIC, TIM_CHANNEL_1) != HAL_OK)
   {

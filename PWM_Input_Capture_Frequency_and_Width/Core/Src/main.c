@@ -59,7 +59,7 @@ static void MX_TIM2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-#define TIMCLOCK 90000000
+#define TIMCLOCK 90000000 //The frequency of Timer2 connected to APB1 running at 90 MHz
 #define PRESCALER 90
 
 uint32_t IC_Value1 = 0;
